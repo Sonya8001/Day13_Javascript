@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Let's learn javascript</h1>
+        <h2>How do we do onclick events and alerts on an anchor</h2>
+
+        <a
+            href="htt://www.youtube.com"
+            target="_blank"
+            onclick="alert('warning you are navigating away from webpage')"
+            >youtube!</a
+        >
+        <hr />
+        <h2>How do we display and hide text?</h2>
+        <h2>What's my secret identity?</h2>
+        <p id="secret"></p>
+        <button
+            onclick="document.getElementById('secret').innerHTML='hello hello';
+document.getElementById('secret').style.display='block';"
+        >
+            Click Me
+        </button>
+        <button
+            onclick="document.getElementById('secret').style.display='none'"
+        >
+            Hide
+        </button>
+
+        <h2>How do we change an image with javascript?</h2>
+        <img
+            src="images/lightbulb_on.jpg"
+            id="myImage"
+            style="height: 200px; width: 200px"
+        />
+
+        <button
+            onclick="document.getElementById('myImage').src='images/lightbulb_off.jpg'"
+        >
+            Bulb Off
+        </button>
+        <button
+            onclick="document.getElementById('myImage').src='images/lightbulb_on.jpg'"
+        >
+            Bulb On
+        </button>
+
+        <h2>How do we change styles with a button?</h2>
+        <p id="alice">Hi. I am Alice</p>
+
+        <button
+            onclick="document.getElementById('alice').style.color='blue'
+    document.getElementById('alice').style.fontSize='5px'"
+        >
+            Cake - Eat Me!
+        </button>
+
+        <button
+            onclick="document.getElementById('alice').style.color='red';
+    document.getElementById('alice').style.fontSize='50px'"
+        >
+            Potion - Drink Me
+        </button>
+        <pr></pr>
+
+        <h2>Extra!</h2>
+
+        <p id="demo"></p>
+        <button onclick="getElementById('demo').innerHTML=Date()">
+            What is the time?
+        </button>
+
+        <p>Box 1: <input type="text" id="field1" value="Hello!" /></p>
+        <p>Box 2: <input type="text" id="field2" /></p>
+        <button onclick="myFunction()">Copy</button>
+        <script>
+            function myFunction() {
+                document.getElementById("field2").value =
+                    document.getElementById("field1").value;
+            }
+        </script>
+    </body>
+</html>
